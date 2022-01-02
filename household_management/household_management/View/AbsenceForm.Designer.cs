@@ -1,7 +1,7 @@
 ﻿
 namespace household_management.View
 {
-    partial class PopulationsForm
+    partial class AbsenceForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,35 +29,35 @@ namespace household_management.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.pViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.aViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // pViewer
+            // aViewer
             // 
-            this.pViewer.ActiveViewIndex = -1;
-            this.pViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pViewer.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pViewer.Location = new System.Drawing.Point(0, 0);
-            this.pViewer.Name = "pViewer";
-            this.pViewer.Size = new System.Drawing.Size(800, 450);
-            this.pViewer.TabIndex = 0;
+            this.aViewer.ActiveViewIndex = -1;
+            this.aViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.aViewer.Cursor = System.Windows.Forms.Cursors.Default;
+            this.aViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.aViewer.Location = new System.Drawing.Point(0, 0);
+            this.aViewer.Name = "aViewer";
+            this.aViewer.Size = new System.Drawing.Size(1113, 567);
+            this.aViewer.TabIndex = 0;
             // 
-            // PopulationsForm
+            // AbsenceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pViewer);
-            this.Name = "PopulationsForm";
+            this.ClientSize = new System.Drawing.Size(1113, 567);
+            this.Controls.Add(this.aViewer);
+            this.Name = "AbsenceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PopulationsForm";
+            this.Text = "AbsenceForm";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public CrystalDecisions.Windows.Forms.CrystalReportViewer pViewer;
+        public CrystalDecisions.Windows.Forms.CrystalReportViewer aViewer;
     }
 }

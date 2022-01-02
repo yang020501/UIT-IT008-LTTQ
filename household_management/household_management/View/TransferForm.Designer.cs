@@ -1,7 +1,7 @@
 ﻿
 namespace household_management.View
 {
-    partial class PopulationsForm
+    partial class TransferForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,35 +29,35 @@ namespace household_management.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.pViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.tViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // pViewer
+            // tViewer
             // 
-            this.pViewer.ActiveViewIndex = -1;
-            this.pViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pViewer.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pViewer.Location = new System.Drawing.Point(0, 0);
-            this.pViewer.Name = "pViewer";
-            this.pViewer.Size = new System.Drawing.Size(800, 450);
-            this.pViewer.TabIndex = 0;
+            this.tViewer.ActiveViewIndex = -1;
+            this.tViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tViewer.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tViewer.Location = new System.Drawing.Point(0, 0);
+            this.tViewer.Name = "tViewer";
+            this.tViewer.Size = new System.Drawing.Size(971, 531);
+            this.tViewer.TabIndex = 0;
             // 
-            // PopulationsForm
+            // TransferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pViewer);
-            this.Name = "PopulationsForm";
+            this.ClientSize = new System.Drawing.Size(971, 531);
+            this.Controls.Add(this.tViewer);
+            this.Name = "TransferForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PopulationsForm";
+            this.Text = "TransferForm";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public CrystalDecisions.Windows.Forms.CrystalReportViewer pViewer;
+        public CrystalDecisions.Windows.Forms.CrystalReportViewer tViewer;
     }
 }

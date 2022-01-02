@@ -1,7 +1,7 @@
 ﻿
 namespace household_management.View
 {
-    partial class PopulationsForm
+    partial class ResidenceForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,35 +29,35 @@ namespace household_management.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.pViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.rViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // pViewer
+            // rViewer
             // 
-            this.pViewer.ActiveViewIndex = -1;
-            this.pViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pViewer.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pViewer.Location = new System.Drawing.Point(0, 0);
-            this.pViewer.Name = "pViewer";
-            this.pViewer.Size = new System.Drawing.Size(800, 450);
-            this.pViewer.TabIndex = 0;
+            this.rViewer.ActiveViewIndex = -1;
+            this.rViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rViewer.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rViewer.Location = new System.Drawing.Point(0, 0);
+            this.rViewer.Name = "rViewer";
+            this.rViewer.Size = new System.Drawing.Size(1055, 534);
+            this.rViewer.TabIndex = 0;
             // 
-            // PopulationsForm
+            // ResidenceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pViewer);
-            this.Name = "PopulationsForm";
+            this.ClientSize = new System.Drawing.Size(1055, 534);
+            this.Controls.Add(this.rViewer);
+            this.Name = "ResidenceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PopulationsForm";
+            this.Text = "ResidenceForm";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public CrystalDecisions.Windows.Forms.CrystalReportViewer pViewer;
+        public CrystalDecisions.Windows.Forms.CrystalReportViewer rViewer;
     }
 }
