@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:viewmodel="clr-namespace:household_management.ViewModel"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <viewmodel:MainViewModel x:Key="MainVM"></viewmodel:MainViewModel>
+    <viewmodel:LoginViewModel x:Key="LoginVM"></viewmodel:LoginViewModel>
+    <viewmodel:HouseholdViewModel x:Key="HouseholdVM"></viewmodel:HouseholdViewModel>
+    <viewmodel:PopulationViewModel x:Key="PopulationVM"></viewmodel:PopulationViewModel>
+    <viewmodel:SearchViewModel x:Key="SearchVM"></viewmodel:SearchViewModel>
+    <viewmodel:PPVViewModel x:Key="PPV_VM"></viewmodel:PPVViewModel>
+    <viewmodel:APVViewModel x:Key="APV_VM"></viewmodel:APVViewModel>
+    <viewmodel:RPVViewModel x:Key="RPV_VM"></viewmodel:RPVViewModel>
+    <viewmodel:TPVViewModel x:Key="TPV_VM"></viewmodel:TPVViewModel>
+    <viewmodel:HPVViewModel x:Key="HPV_VM"></viewmodel:HPVViewModel>
+    <viewmodel:FMLViewModel x:Key="FML_VM"></viewmodel:FMLViewModel>
+    <viewmodel:AddPageViewModel x:Key="AddPageVM"></viewmodel:AddPageViewModel>
+    <viewmodel:FamilyViewModel x:Key="FamilyVM"></viewmodel:FamilyViewModel>
+    <viewmodel:TransferViewModel x:Key="TransferVM"></viewmodel:TransferViewModel>
+    <viewmodel:AbsenceViewModel x:Key="AbsenceVM"></viewmodel:AbsenceViewModel>
+    <viewmodel:ResidenceViewModel x:Key="ResidenceVM"></viewmodel:ResidenceViewModel>
+    <viewmodel:AccountManagerViewModel x:Key="AccountVM"></viewmodel:AccountManagerViewModel>
+    <viewmodel:ChangePasswordViewModel x:Key="ChangePassVM"></viewmodel:ChangePasswordViewModel>
+    <viewmodel:AddAccountViewModel x:Key="AddAccountVM"></viewmodel:AddAccountViewModel>
+</ResourceDictionary>
