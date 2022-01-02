@@ -12,29 +12,29 @@
     <Border Background="White" CornerRadius="0,0,4,0">
     <Grid>
         <dragablz:TabablzControl BorderThickness="0" SelectedIndex="{Binding Selected,UpdateSourceTrigger=PropertyChanged}" FontSize="16" >
-            <TabItem Header="Popualtions" IsSelected="{Binding pSelected,UpdateSourceTrigger=PropertyChanged}">
+            <TabItem Header="Nhân khẩu" IsSelected="{Binding pSelected,UpdateSourceTrigger=PropertyChanged}">
 
                 <Frame  NavigationUIVisibility="Hidden" Content="{Binding pFrame,UpdateSourceTrigger=PropertyChanged}">
 
                 </Frame>
 
             </TabItem>
-            <TabItem Header="Household" IsSelected="{Binding hSelected,UpdateSourceTrigger=PropertyChanged}">
+            <TabItem Header="Hộ khẩu" IsSelected="{Binding hSelected,UpdateSourceTrigger=PropertyChanged}">
                 <Frame NavigationUIVisibility="Hidden" Content="{Binding hFrame,UpdateSourceTrigger=PropertyChanged}">
 
                 </Frame>
             </TabItem>
-            <TabItem Header="Transfer" IsSelected="{Binding tSelected,UpdateSourceTrigger=PropertyChanged}">
+            <TabItem Header="Chuyển khẩu" IsSelected="{Binding tSelected,UpdateSourceTrigger=PropertyChanged}">
                 <Frame NavigationUIVisibility="Hidden" Content="{Binding tFrame,UpdateSourceTrigger=PropertyChanged}">
 
                 </Frame>
             </TabItem>
-            <TabItem Header="Temporary Absencce" IsSelected="{Binding aSelected,UpdateSourceTrigger=PropertyChanged}">
+            <TabItem Header="Tạm vắng" IsSelected="{Binding aSelected,UpdateSourceTrigger=PropertyChanged}">
                 <Frame NavigationUIVisibility="Hidden" Content="{Binding aFrame,UpdateSourceTrigger=PropertyChanged}">
 
                 </Frame>
             </TabItem>
-            <TabItem Header="Temporary Residence" IsSelected="{Binding rSelected,UpdateSourceTrigger=PropertyChanged}">
+            <TabItem Header="Tạm trú" IsSelected="{Binding rSelected,UpdateSourceTrigger=PropertyChanged}">
                 <Frame NavigationUIVisibility="Hidden" Content="{Binding rFrame,UpdateSourceTrigger=PropertyChanged}">
 
                 </Frame>

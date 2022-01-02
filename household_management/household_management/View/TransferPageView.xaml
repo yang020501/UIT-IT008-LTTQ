@@ -23,33 +23,33 @@
                      materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                    IsReadOnly="True" HorizontalAlignment="Left" Height="49" Margin="173,29,0,0"  VerticalAlignment="Top" Width="415" materialDesign:HintAssist.Hint="Full Name" TextWrapping="Wrap" FontSize="16"  Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0" />
+                    IsReadOnly="True" HorizontalAlignment="Left" Height="49" Margin="173,29,0,0"  VerticalAlignment="Top" Width="415" materialDesign:HintAssist.Hint="Họ tên" TextWrapping="Wrap" FontSize="16"  Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0" />
                 <materialDesign:PackIcon Kind="CardAccountDetails" Margin="120,117,0,0" Height="31" Width="32" />
                 <TextBox 
                      materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                     IsReadOnly="True"
-                HorizontalAlignment="Left" Height="49" Margin="173,99,0,0"  VerticalAlignment="Top" Width="220" materialDesign:HintAssist.Hint="Id" TextWrapping="Wrap" FontSize="16" Text="{Binding IdOwner, UpdateSourceTrigger=PropertyChanged}"  materialDesign:HintAssist.HelperText="12 digits numbers" />
-                <RadioButton Content="Female" HorizontalAlignment="Left" Margin="594,105,0,0" VerticalAlignment="Top"  Height="28" RenderTransformOrigin="0.615,0.157" IsChecked="{Binding FemaleChoice}" Padding="4,0,0,0" BorderBrush="#FF4D60C0" Background="#FF4D60C0"/>
-                <RadioButton Content="Male" HorizontalAlignment="Left" Margin="519,105,0,0" VerticalAlignment="Top"  Height="28" RenderTransformOrigin="0.615,0.157" IsChecked="{Binding MaleChoice}" Background="#FF4D60C0" BorderBrush="#FF4D60C0"/>
+                HorizontalAlignment="Left" Height="49" Margin="173,99,0,0"  VerticalAlignment="Top" Width="220" materialDesign:HintAssist.Hint="CMND/CCCD" TextWrapping="Wrap" FontSize="16" Text="{Binding IdOwner, UpdateSourceTrigger=PropertyChanged}"  materialDesign:HintAssist.HelperText="12 digits numbers" />
+                <RadioButton Content="Nữ" HorizontalAlignment="Left" Margin="594,105,0,0" VerticalAlignment="Top"  Height="28" RenderTransformOrigin="0.615,0.157" IsChecked="{Binding FemaleChoice}" Padding="4,0,0,0" BorderBrush="#FF4D60C0" Background="#FF4D60C0"/>
+                <RadioButton Content="Nam" HorizontalAlignment="Left" Margin="519,105,0,0" VerticalAlignment="Top"  Height="28" RenderTransformOrigin="0.615,0.157" IsChecked="{Binding MaleChoice}" Background="#FF4D60C0" BorderBrush="#FF4D60C0"/>
                 <Label Content="Gender:" HorizontalAlignment="Left" Margin="441,107,0,0" VerticalAlignment="Top" Height="26" Width="73" FontSize="16"/>
                 <TextBox IsReadOnly="True"
                           materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                      
                 Text="{Binding Id_Household, UpdateSourceTrigger=PropertyChanged}"
-                HorizontalAlignment="Left" Height="34" Margin="262,177,0,0"  VerticalAlignment="Top" Width="156" materialDesign:HintAssist.Hint="HouseholdId" TextWrapping="Wrap" FontSize="16" />
-                <Label Content="Household Id:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,185,0,0" Height="26" Width="115" FontSize="16" Padding="0" FontWeight="Bold" FontStyle="Italic"/>
+                HorizontalAlignment="Left" Height="34" Margin="262,177,0,0"  VerticalAlignment="Top" Width="186" materialDesign:HintAssist.Hint="Mã hộ khẩu" TextWrapping="Wrap" FontSize="16" />
+                <Label Content="Mã hộ khẩu:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,185,0,0" Height="26" Width="115" FontSize="16" Padding="0" FontWeight="Bold" FontStyle="Italic"/>
                 <TextBox
                      materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                 IsReadOnly="True"
-                x:Name="tbFullName_Copy" HorizontalAlignment="Left" Height="49" Margin="173,239,0,0"  VerticalAlignment="Top" Width="415" materialDesign:HintAssist.Hint="Full Name" TextWrapping="Wrap" FontSize="16"  Text="{Binding HName, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0" />
+                x:Name="tbFullName_Copy" HorizontalAlignment="Left" Height="49" Margin="173,239,0,0"  VerticalAlignment="Top" Width="415" materialDesign:HintAssist.Hint="Họ tên chủ hộ" TextWrapping="Wrap" FontSize="16"  Text="{Binding HName, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0" />
                 <materialDesign:PackIcon Kind="HomeAccount" Margin="120,245,0,0" Height="43" Width="43" />
                 <materialDesign:PackIcon Kind="CalendarRange" Margin="733,30,0,0" Height="36" Width="42" RenderTransformOrigin="0.444,1.213" />
-                <Label Content="Create Date:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="780,36,0,0" Height="21" Width="126" FontSize="16" Padding="0"/>
+                <Label Content="Ngày tạo:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="780,36,0,0" Height="21" Width="126" FontSize="16" Padding="0"/>
                 <TextBox IsReadOnly="True"
                  HorizontalAlignment="Left" Height="34" Margin="780,71,0,0"  VerticalAlignment="Top" Width="212"  TextWrapping="Wrap" FontSize="16"  Text="{Binding CreateDate, UpdateSourceTrigger=PropertyChanged}" />
 
@@ -59,7 +59,7 @@
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                 IsReadOnly="True"
         HorizontalAlignment="Left" Height="49" Margin="780,137,0,0"  
-        VerticalAlignment="Top" Width="348" materialDesign:HintAssist.Hint="Present Address/Household Address" 
+        VerticalAlignment="Top" Width="348" materialDesign:HintAssist.Hint="Địa chỉ hộ khẩu hiện" 
         TextWrapping="Wrap" FontSize="16" 
         Text="{Binding NAddress,UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0">
                 </TextBox>
@@ -69,9 +69,9 @@
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                 IsReadOnly="True"
-                HorizontalAlignment="Left" Height="49" Margin="780,213,0,0"  VerticalAlignment="Top" Width="348" materialDesign:HintAssist.Hint="Old Address" TextWrapping="Wrap" FontSize="16" Text="{Binding OAddress, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
+                HorizontalAlignment="Left" Height="49" Margin="780,213,0,0"  VerticalAlignment="Top" Width="348" materialDesign:HintAssist.Hint="Địa chỉ hộ khẩu cũ" TextWrapping="Wrap" FontSize="16" Text="{Binding OAddress, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
                 <materialDesign:PackIcon Kind="HomeEdit" Margin="738,226,0,0" Height="36" Width="32" RenderTransformOrigin="0.137,0.422" />
-                <Label Content="ID:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
+                <Label Content="MÃ:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
                 <Label Content="{Binding Id, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="32,14,0,0" VerticalAlignment="Top" Width="59" Height="20" Padding="0"/>
 
             </Grid>
@@ -93,14 +93,14 @@
                 ItemsSource="{Binding DvTransfer , UpdateSourceTrigger=PropertyChanged}" Margin="0,0,-0.4,0.8"                    
                 >
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="Number" Binding="{Binding OrdinalNumber}"/>
-                            <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
-                            <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
-                            <DataGridTextColumn Header="Id_Household" Binding="{Binding Id_Household}"/>
-                            <DataGridTextColumn Header="Owner Household Name" Binding="{Binding Name_HouseholdOwner}"/>
-                            <DataGridTextColumn Header="Old Address" Binding="{Binding OldAddress}"/>
-                            <DataGridTextColumn Header="Present Address" Binding="{Binding NewAddress}"/>
-                            <DataGridTextColumn Header="Create Date" Binding="{Binding CreateDate}"/>
+                            <DataGridTextColumn Header="Stt" Binding="{Binding OrdinalNumber}"/>
+                            <DataGridTextColumn Header="Mã" Binding="{Binding Id}"/>
+                            <DataGridTextColumn Header="Họ tên" Binding="{Binding Name}"/>
+                            <DataGridTextColumn Header="Mã hộ khẩu" Binding="{Binding Id_Household}"/>
+                            <DataGridTextColumn Header="Họ tên chủ hộ" Binding="{Binding Name_HouseholdOwner}"/>
+                            <DataGridTextColumn Header="Địa chỉ hộ khẩu cũ" Binding="{Binding OldAddress}"/>
+                            <DataGridTextColumn Header="Địa chỉ hộ khẩu hiện tại" Binding="{Binding NewAddress}"/>
+                            <DataGridTextColumn Header="Ngày tạo" Binding="{Binding CreateDate}"/>
 
                         </DataGrid.Columns>
                     </DataGrid>
@@ -108,7 +108,7 @@
             </Border>
             <Border CornerRadius="0,0,4,0" Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,2,2">
             <Grid >
-                    <Button Command="{Binding Deletebtn}" Content="Remove"  Height="79" Background="#FF4D60C0" HorizontalAlignment="Left" Width="140" VerticalAlignment="Top" Margin="40,110,0,0" Foreground="#FFF9FAFC" FontSize="18"/>
+                    <Button Command="{Binding Deletebtn}" Content="Xóa"  Height="79" Background="#FF4D60C0" HorizontalAlignment="Left" Width="140" VerticalAlignment="Top" Margin="40,110,0,0" Foreground="#FFF9FAFC" FontSize="18"/>
             </Grid>
             </Border>
 
