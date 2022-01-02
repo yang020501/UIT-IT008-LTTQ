@@ -94,26 +94,26 @@
                                       >
                                
                                 
-                                <TreeViewItem Header="Profile" >
-                                    <TreeViewItem Header="New" IsSelected="{Binding AddSelected,UpdateSourceTrigger=PropertyChanged}" FontSize="14"></TreeViewItem>
-                                    <TreeViewItem Header="Search" FontSize="14" IsSelected="{Binding SearchSelected,UpdateSourceTrigger=PropertyChanged}" ></TreeViewItem>
+                                <TreeViewItem Header="Hồ Sơ" >
+                                    <TreeViewItem Header="Thêm mới" IsSelected="{Binding AddSelected,UpdateSourceTrigger=PropertyChanged}" FontSize="14"></TreeViewItem>
+                                    <TreeViewItem Header="Tìm kiếm" FontSize="14" IsSelected="{Binding SearchSelected,UpdateSourceTrigger=PropertyChanged}" ></TreeViewItem>
                                 </TreeViewItem>
-                                <TreeViewItem Header="Account" >
+                                <TreeViewItem Header="Tài khoản" >
                                     
-                                    <TreeViewItem Header="Change Password" FontSize="14" IsSelected="{Binding ChangePasswordSelected, UpdateSourceTrigger=PropertyChanged}"></TreeViewItem>
-                                    <TreeViewItem x:Name="tvItemManage" Header="Manage" IsSelected="{Binding ManageSelected,UpdateSourceTrigger=PropertyChanged}" FontSize="14"></TreeViewItem>
+                                    <TreeViewItem Header="Đổi mật khẩu" FontSize="14" IsSelected="{Binding ChangePasswordSelected, UpdateSourceTrigger=PropertyChanged}"></TreeViewItem>
+                                    <TreeViewItem x:Name="tvItemManage" Header="Quản lý" IsSelected="{Binding ManageSelected,UpdateSourceTrigger=PropertyChanged}" FontSize="14"></TreeViewItem>
                                 </TreeViewItem>
-                                <TreeViewItem Header="Print">
-                                    <TreeViewItem Header="Report" IsSelected="{Binding ReportSelected,UpdateSourceTrigger=PropertyChanged}" ></TreeViewItem>
-                                    <TreeViewItem Header="Form"  >
-                                        <TreeViewItem Header="Populations" IsSelected="{Binding PopulationsForm,UpdateSourceTrigger=PropertyChanged}" FontSize="14" ></TreeViewItem>
-                                        <TreeViewItem Header="Household"  IsSelected="{Binding HouseholdForm,UpdateSourceTrigger=PropertyChanged}" FontSize="14" ></TreeViewItem>
-                                        <TreeViewItem Header="Transfer"  IsSelected="{Binding TransferForm,UpdateSourceTrigger=PropertyChanged}" FontSize="14"></TreeViewItem>
-                                        <TreeViewItem Header="TAbsence"  IsSelected="{Binding AbsenceForm,UpdateSourceTrigger=PropertyChanged}" FontSize="14"></TreeViewItem>
-                                        <TreeViewItem Header="TResidence"  IsSelected="{Binding ResidenceForm,UpdateSourceTrigger=PropertyChanged}" FontSize="14"></TreeViewItem>
+                                <TreeViewItem Header="In">
+                                    <TreeViewItem Header="Báo cáo chung" IsSelected="{Binding ReportSelected,UpdateSourceTrigger=PropertyChanged}" ></TreeViewItem>
+                                    <TreeViewItem Header="Phiếu"  >
+                                        <TreeViewItem Header="Nhân khẩu" IsSelected="{Binding PopulationsForm,UpdateSourceTrigger=PropertyChanged}" FontSize="14" ></TreeViewItem>
+                                        <TreeViewItem Header="Hộ khẩu"  IsSelected="{Binding HouseholdForm,UpdateSourceTrigger=PropertyChanged}" FontSize="14" ></TreeViewItem>
+                                        <TreeViewItem Header="Chuyển khẩu"  IsSelected="{Binding TransferForm,UpdateSourceTrigger=PropertyChanged}" FontSize="14"></TreeViewItem>
+                                        <TreeViewItem Header="Tạm vắng"  IsSelected="{Binding AbsenceForm,UpdateSourceTrigger=PropertyChanged}" FontSize="14"></TreeViewItem>
+                                        <TreeViewItem Header="Tạm trú"  IsSelected="{Binding ResidenceForm,UpdateSourceTrigger=PropertyChanged}" FontSize="14"></TreeViewItem>
                                     </TreeViewItem>
                                 </TreeViewItem>
-                                <TreeViewItem Header="About Us" IsSelected="{Binding AboutUs,UpdateSourceTrigger=PropertyChanged}">
+                                <TreeViewItem Header="Thông tin" IsSelected="{Binding AboutUs,UpdateSourceTrigger=PropertyChanged}">
                                 </TreeViewItem>
                                 
                             </TreeView>

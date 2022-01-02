@@ -49,15 +49,15 @@
                          materialDesign:TextFieldAssist.UnderlineBrush="{DynamicResource MaterialDesignPaper}"
                          BorderBrush="White" Padding="0,19,0,12" Margin="42,0,549.2,0" Foreground="White" FontSize="14">
                     <ComboBoxItem
-                             Content="Popualtions" />
+                             Content="Nhân khẩu" />
                     <ComboBoxItem
-                             Content="Household" />
+                             Content="Hộ khẩu" />
                     <ComboBoxItem
-                             Content="Transfer" />
+                             Content="Chuyển khẩu" />
                     <ComboBoxItem
-                             Content="Absencce"  />
+                             Content="Tạm vắng"  />
                     <ComboBoxItem
-                             Content="Residence"  />
+                             Content="Tạm trú"  />
                 </ComboBox>
                 <Button Grid.Column="0"
                     Style="{DynamicResource MaterialDesignToolButton}" Margin="195,0,475,-0.2" Height="Auto">
@@ -70,7 +70,7 @@
                      Background="White"
                      Grid.Column="0"
                      Margin="254,8,10.2,5.8"
-                     materialDesign:HintAssist.Hint="Search Here"
+                     materialDesign:HintAssist.Hint="Nhập tìm kiếm"
                      materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                      BorderThickness="0"
                      MinWidth="200"
@@ -78,10 +78,10 @@
                      Text="{Binding txtSearch,UpdateSourceTrigger=PropertyChanged,Mode=OneWayToSource}">
                      
                 </TextBox>
-                <RadioButton IsChecked="{Binding rdName,UpdateSourceTrigger=PropertyChanged}" x:Name="rdName" Content="Name" Foreground="#FFF6E9E9" BorderBrush="#FFF6E9E9"  BorderThickness="4" Background="#FFF6E9E9" FontSize="16" FontWeight="Bold" Margin="48.8,0,-146.4,-0.2" Grid.Column="1" Padding="4,0,0,2" />
-                <RadioButton IsChecked="{Binding rdOrdinalNumber,UpdateSourceTrigger=PropertyChanged}" x:Name="rdOrdinalNumber" Content="Ordinalnumber" Foreground="#FFF6E9E9" BorderBrush="#FFF6E9E9"  BorderThickness="4" Background="#FFF6E9E9" FontSize="16" FontWeight="Bold" Margin="155.8,0,-254.4,-0.2" Grid.Column="1" Padding="4,0,0,2"/>
-                <RadioButton IsChecked="{Binding rdId,UpdateSourceTrigger=PropertyChanged}" x:Name="rdId" Content="Id" Foreground="#FFF6E9E9" BorderBrush="#FFF6E9E9"  BorderThickness="4" Background="#FFF6E9E9" FontSize="16" FontWeight="Bold" Margin="349.8,0,-376.4,-0.2" Grid.Column="1" Padding="4,0,0,2"/>
-                <RadioButton IsChecked="{Binding rdId_Household,UpdateSourceTrigger=PropertyChanged}" x:Name="rdId_Household" Content="Id_Household" Foreground="#FFF6E9E9" BorderBrush="#FFF6E9E9"  BorderThickness="4" Background="#FFF6E9E9" FontSize="16" FontWeight="Bold" Margin="449.8,2,-548,-2.2" Grid.Column="1" Padding="4,0,0,2"/>
+                <RadioButton IsChecked="{Binding rdName,UpdateSourceTrigger=PropertyChanged}" x:Name="rdName" Content="Họ tên" Foreground="#FFF6E9E9" BorderBrush="#FFF6E9E9"  BorderThickness="4" Background="#FFF6E9E9" FontSize="16" FontWeight="Bold" Margin="153.8,0,-251.8,-0.2" Grid.Column="1" Padding="4,0,0,2" />
+                <RadioButton IsChecked="{Binding rdOrdinalNumber,UpdateSourceTrigger=PropertyChanged}" x:Name="rdOrdinalNumber" Content="Stt" Foreground="#FFF6E9E9" BorderBrush="#FFF6E9E9"  BorderThickness="4" Background="#FFF6E9E9" FontSize="16" FontWeight="Bold" Margin="29.8,0,-128.8,-0.2" Grid.Column="1" Padding="4,0,0,2"/>
+                <RadioButton IsChecked="{Binding rdId,UpdateSourceTrigger=PropertyChanged}" x:Name="rdId" Content="Mã" Foreground="#FFF6E9E9" BorderBrush="#FFF6E9E9"  BorderThickness="4" Background="#FFF6E9E9" FontSize="16" FontWeight="Bold" Margin="316.8,0,-367,-0.2" Grid.Column="1" Padding="4,0,0,2"/>
+                <RadioButton IsChecked="{Binding rdId_Household,UpdateSourceTrigger=PropertyChanged}" x:Name="rdId_Household" Content="Mã hộ khẩu" Foreground="#FFF6E9E9" BorderBrush="#FFF6E9E9"  BorderThickness="4" Background="#FFF6E9E9" FontSize="16" FontWeight="Bold" Margin="449.8,2,-548,-2.2" Grid.Column="1" Padding="4,0,0,2"/>
 
             </Grid>
             <Grid Grid.Row="1">
