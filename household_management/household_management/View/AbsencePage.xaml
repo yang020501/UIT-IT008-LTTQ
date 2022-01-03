@@ -18,9 +18,9 @@
 
                     <Border BorderBrush="Black" BorderThickness="2" Margin="26,26,26,53.4">
                         <Grid >
-                            <Label Content="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM" Margin="212,10,0,0" VerticalAlignment="Top" Height="38" HorizontalAlignment="Left" Width="412" FontSize="20" FontWeight="Bold"/>
-                            <Label Content="Độc lập - Tự do - Hạnh phúc" HorizontalAlignment="Left" Margin="293,39,0,0" VerticalAlignment="Top" Width="273" FontSize="16" RenderTransformOrigin="0.577,0.483"/>
-                            <Label Content="Phiếu đăng kí tạm vắng" Margin="238,73,224,363" FontWeight="Bold" FontFamily="Trebuchet MS" FontSize="24" Padding="8,4,4,4" Foreground="#DDED1D1D"/>
+                            <Label Content="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM" Margin="191,9,0,0" VerticalAlignment="Top" Height="38" HorizontalAlignment="Left" Width="412" FontSize="20" FontWeight="Bold"/>
+                            <Label Content="Độc lập - Tự do - Hạnh phúc" HorizontalAlignment="Left" Margin="272,38,0,0" VerticalAlignment="Top" Width="273" FontSize="16" RenderTransformOrigin="0.577,0.483"/>
+                            <Label Content="Phiếu đăng kí tạm vắng" Margin="238,68,223.8,368" FontWeight="Bold" FontFamily="Trebuchet MS" FontSize="24" Padding="8,4,4,4" Foreground="#DDED1D1D"/>
                             <TextBox 
                                   materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
