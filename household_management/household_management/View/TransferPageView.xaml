@@ -51,6 +51,8 @@
                 <materialDesign:PackIcon Kind="CalendarRange" Margin="733,30,0,0" Height="36" Width="42" RenderTransformOrigin="0.444,1.213" />
                 <Label Content="Ngày tạo:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="780,36,0,0" Height="21" Width="126" FontSize="16" Padding="0"/>
                 <TextBox IsReadOnly="True"
+                         materialDesign:HintAssist.Foreground="Black"
+                            materialDesign:TextFieldAssist.UnderlineBrush="Black"
                  HorizontalAlignment="Left" Height="34" Margin="780,71,0,0"  VerticalAlignment="Top" Width="212"  TextWrapping="Wrap" FontSize="16"  Text="{Binding CreateDate, UpdateSourceTrigger=PropertyChanged}" />
 
                 <TextBox

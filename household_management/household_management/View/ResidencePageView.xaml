@@ -55,6 +55,8 @@
                     <Label Content="Ngày hết hạn:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="749,164,0,0" Height="21" Width="126" FontSize="16" Padding="0"/>
                     <Label Content="Ngày tạo:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="748,113,0,0" Height="21" Width="126" FontSize="16" Padding="0"/>
                     <TextBox IsReadOnly="True"
+                             materialDesign:HintAssist.Foreground="Black"
+                            materialDesign:TextFieldAssist.UnderlineBrush="Black"
                  HorizontalAlignment="Left" Height="34" Margin="880,100,0,0"  VerticalAlignment="Top" Width="194" materialDesign:HintAssist.Hint="Ngày tạm vắng" TextWrapping="Wrap" FontSize="16"  Text="{Binding CreateDate, UpdateSourceTrigger=PropertyChanged}" />
 
                     <TextBox
@@ -75,6 +77,8 @@
                 HorizontalAlignment="Left" Height="49" Margin="804,260,0,0"  VerticalAlignment="Top" Width="348" materialDesign:HintAssist.Hint="Địa chỉ tạm trú" TextWrapping="Wrap" FontSize="16" Text="{Binding TAddress, UpdateSourceTrigger=PropertyChanged}" />
                     <materialDesign:PackIcon Kind="HomeExportOutline" Margin="749,275,0,0" Height="34" Width="37" RenderTransformOrigin="0.137,0.422" />
                     <TextBox IsReadOnly="True"
+                             materialDesign:HintAssist.Foreground="Black"
+                            materialDesign:TextFieldAssist.UnderlineBrush="Black"
                 HorizontalAlignment="Left" Height="34" Margin="880,151,0,0"  VerticalAlignment="Top" Width="194" materialDesign:HintAssist.Hint="Hạn tạm trú" TextWrapping="Wrap" FontSize="16"  Text="{Binding ExpireDate, UpdateSourceTrigger=PropertyChanged}" />
                     <Label Content="MÃ:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
                     <Label Content="{Binding Id, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="43,14,0,0" VerticalAlignment="Top" Width="59" Height="20" Padding="0"/>
