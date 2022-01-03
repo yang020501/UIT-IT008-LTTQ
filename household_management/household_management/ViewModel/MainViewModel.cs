@@ -101,7 +101,7 @@ namespace household_management.ViewModel
             }
             else if(LoginViewModel.Role != "Manager")
             {
-                MessageBox.Show("you do not have the authority to accsess");
+                MessageBox.Show("Bạn không có quyền truy cập");
             }
         }
         

@@ -22,7 +22,7 @@
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                         Height="49" Margin="82,110,340.8,0"  
-                             VerticalAlignment="Top" materialDesign:HintAssist.Hint="Full Name" 
+                             VerticalAlignment="Top" materialDesign:HintAssist.Hint="Họ tên" 
                              TextWrapping="Wrap" FontSize="16" Text="{Binding Name_User, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
                     <materialDesign:PackIcon Kind="Account" Margin="29,128,0,0" Height="31" Width="32" />
                     <TextBox
@@ -30,57 +30,57 @@
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                     HorizontalAlignment="Left" Height="49" Margin="82,169,0,0" Name="IdHouseholdBox"
-                        VerticalAlignment="Top" Width="208" materialDesign:HintAssist.Hint="Id" 
+                        VerticalAlignment="Top" Width="208" materialDesign:HintAssist.Hint="CMND/CCCD" 
                         TextWrapping="Wrap" FontSize="16" Text="{Binding Id_User, UpdateSourceTrigger=PropertyChanged}"  
-                        materialDesign:HintAssist.HelperText="12 digits numbers" Padding="0,6,0,0" />
+                        materialDesign:HintAssist.HelperText="12 chữ số" Padding="0,6,0,0" />
                     <materialDesign:PackIcon Kind="CardAccountDetails" Margin="29,187,0,0" Height="31" Width="32" RenderTransformOrigin="0.681,-1.258" />
                     <TextBox
-                    HorizontalAlignment="Left" Height="34" Margin="538,184,0,0"  VerticalAlignment="Top" Width="208" materialDesign:HintAssist.Hint="HouseholdId" TextWrapping="Wrap" FontSize="16" Text="{Binding Id_Household, UpdateSourceTrigger=PropertyChanged}"/>
+                    HorizontalAlignment="Left" Height="34" Margin="538,184,0,0"  VerticalAlignment="Top" Width="208" materialDesign:HintAssist.Hint="Mã hộ khẩu" TextWrapping="Wrap" FontSize="16" Text="{Binding Id_Household, UpdateSourceTrigger=PropertyChanged}"/>
                     <materialDesign:PackIcon Kind="HomeAccount" Margin="29,272,0,0" Height="31" Width="32" />
                     <TextBox 
                          materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                           
-                        Height="34" Margin="82,269,340.8,0"  VerticalAlignment="Top" materialDesign:HintAssist.Hint="Full Name Household Owner" TextWrapping="Wrap" FontSize="16" Text="{Binding Name_Owner, UpdateSourceTrigger=PropertyChanged}"/>
+                        Height="34" Margin="82,269,340.8,0"  VerticalAlignment="Top" materialDesign:HintAssist.Hint="Họ tên người đứng tên hộ khẩu" TextWrapping="Wrap" FontSize="16" Text="{Binding Name_Owner, UpdateSourceTrigger=PropertyChanged}"/>
                     <TextBox
                         
                          materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                           
-                    HorizontalAlignment="Left" Height="34" Margin="82,350,0,0"  VerticalAlignment="Top" Width="346" materialDesign:HintAssist.Hint="Address" TextWrapping="Wrap" FontSize="16" Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}"/>
+                    HorizontalAlignment="Left" Height="34" Margin="82,350,0,0"  VerticalAlignment="Top" Width="346" materialDesign:HintAssist.Hint="Địa chỉ" TextWrapping="Wrap" FontSize="16" Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}"/>
                     <materialDesign:PackIcon Kind="HomeMapMarker" Margin="29,353,0,0" Height="31" Width="32" />
                     <materialDesign:PackIcon Kind="CalendarRange" Margin="487,335,0,0" Height="31" Width="32" RenderTransformOrigin="0.444,1.213" />
-                    <Label Content="From" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="487,381,0,0" Height="31" Width="49" FontSize="16"/>
-                    <Label Content="(Today)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="555,381,0,0" Height="31" Width="107" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
-                    <Label Content="To" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="487,433,0,0" Height="31" Width="38" FontSize="16"/>
+                    <Label Content="Từ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="487,381,0,0" Height="31" Width="49" FontSize="16"/>
+                    <Label Content="(Hôm nay)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="555,381,0,0" Height="31" Width="107" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+                    <Label Content="Đến" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="487,433,0,0" Height="31" Width="38" FontSize="16"/>
                     <DatePicker
 
                           materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
 
-                    materialDesign:HintAssist.Hint="Day leave" SelectedDate="{Binding ExpireDate, UpdateSourceTrigger=PropertyChanged}"
+                    materialDesign:HintAssist.Hint="Ngày hết hạn" SelectedDate="{Binding ExpireDate, UpdateSourceTrigger=PropertyChanged}"
                     Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="538,416,52.8,32" Height="48" FontSize="16" FontWeight="Bold" FontStyle="Italic" Padding="0" />
-                    <Label Content="Household Owner Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="82,233,0,0" Height="31" Width="232" FontSize="16" Padding="0,4,4,4"/>
-                    <Label Content="Household Id:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="418,187,0,0" Height="31" Width="115" FontSize="16" Padding="0,4,4,4" FontWeight="Bold" FontStyle="Italic"/>
-                    <Label Content="Household Address" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="82,314,0,0" Height="31" Width="232" FontSize="16" Padding="0,4,4,4"/>
-                    <Label Content="Temporary Residence Address" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="82,402,0,0" Height="31" Width="248" FontSize="16" Padding="0,4,4,4" FontStyle="Italic"/>
+                    <Label Content="Tên người đứng tên hộ khẩu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="82,233,0,0" Height="31" Width="232" FontSize="16" Padding="0,4,4,4"/>
+                    <Label Content="Mã hộ khẩu:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="418,187,0,0" Height="31" Width="115" FontSize="16" Padding="0,4,4,4" FontWeight="Bold" FontStyle="Italic"/>
+                    <Label Content="Địa chỉ hộ khẩu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="82,314,0,0" Height="31" Width="232" FontSize="16" Padding="0,4,4,4"/>
+                    <Label Content="Địa chỉ tạm trú" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="82,402,0,0" Height="31" Width="248" FontSize="16" Padding="0,4,4,4" FontStyle="Italic"/>
                     <TextBox
                          materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                      
-                        HorizontalAlignment="Left" Height="34" Margin="82,433,0,0"  VerticalAlignment="Top" Width="346" materialDesign:HintAssist.Hint="Address" TextWrapping="Wrap" FontSize="16" Text="{Binding TAddress, UpdateSourceTrigger=PropertyChanged}"/>
+                        HorizontalAlignment="Left" Height="34" Margin="82,433,0,0"  VerticalAlignment="Top" Width="346" materialDesign:HintAssist.Hint="Địa chỉ" TextWrapping="Wrap" FontSize="16" Text="{Binding TAddress, UpdateSourceTrigger=PropertyChanged}"/>
                     <materialDesign:PackIcon Kind="HomeExportOutline" Margin="29,436,0,0" Height="31" Width="32" />
 
-                    <Label Content="SOCIALIST REPUBLIC OF VIETNAM" Margin="212,4,0,0" VerticalAlignment="Top" Height="38" HorizontalAlignment="Left" Width="346" FontSize="20" FontWeight="Bold"/>
-                    <Label Content="Independent - Freedom - Happpiness" HorizontalAlignment="Left" Margin="235,27,0,0" VerticalAlignment="Top" Width="273" FontSize="16"/>
-                    <Label Content="Temporary Residence Form" Margin="212,62,235.8,391" FontWeight="Bold" FontFamily="Trebuchet MS" FontSize="24" Padding="8,4,4,4" Foreground="#DDED1D1D"/>
+                    <Label Content="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM" Margin="182,1,0,0" VerticalAlignment="Top" Height="38" HorizontalAlignment="Left" Width="423" FontSize="20" FontWeight="Bold"/>
+                    <Label Content="Độc lập - Tự do - Hạnh phúc" HorizontalAlignment="Left" Margin="291,28,0,0" VerticalAlignment="Top" Width="273" FontSize="16"/>
+                    <Label Content="Phiếu đăng kí tạm trú" Margin="264,57,184,396" FontWeight="Bold" FontFamily="Trebuchet MS" FontSize="24" Padding="8,4,4,4" Foreground="#DDED1D1D"/>
                 </Grid>
             </Border>
-            <Button Content="Check" Height="38" Foreground="White" HorizontalAlignment="Left" Margin="435,528,0,0" 
+            <Button Content="Kiểm tra" Height="38" Foreground="White" HorizontalAlignment="Left" Margin="435,528,0,0" 
                             VerticalAlignment="Top" Width="95" Background="#FF4D60C0"
                             Command="{Binding CheckIdHouseholdCommand}" Name="CheckButton"
                             CommandParameter="{Binding ElementName=IdHouseholdBox}"/>
-            <Button Content="Add"  Height="38"  Width="95" Background="#FF4D60C0" Margin="295,528,434,0" 
+            <Button Content="Lưu"  Height="38"  Width="95" Background="#FF4D60C0" Margin="295,528,434,0" 
                     VerticalAlignment="Top" Command="{Binding AddCommand}" Name="AddButton"
                     CommandParameter="{Binding ElementName=AddButton}" Foreground="#FFFAFBFC"/>
         </Grid>

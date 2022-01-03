@@ -65,7 +65,7 @@ namespace household_management.ViewModel
                     return false;
             }, (p) =>
             {
-                if (MessageBox.Show("Do you want to REMOVE?", "Warning!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                if (MessageBox.Show("Bạn có muốn XÓA?", "Cảnh Báo!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
                     string tmp = (string)Selected.Row["Id_Person"];
                     var familymemList = DataProvider.Ins.DB.Family_Household.Where(x => x.Id_Person == tmp).ToList();
@@ -86,7 +86,7 @@ namespace household_management.ViewModel
                         else familymem = DataProvider.Ins.DB.Family_Household.Where(x => x.Id_Person == tmp).SingleOrDefault();
                         if (familymem.Id_Owner == familymem.Id_Person)
                         {
-                            MessageBox.Show("You can't REMOVE Household_Owner", "Notification!", MessageBoxButton.OK, MessageBoxImage.Information);
+                            MessageBox.Show("Không thể xóa người đứng tên hộ khẩu", "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Information);
                             return;
                         }
                         DataProvider.Ins.DB.Family_Household.Remove(familymem);
@@ -128,14 +128,14 @@ namespace household_management.ViewModel
                           
                             Id = "";
                            
-                            MessageBox.Show("This person has not declared his/her identity!", "Notification!", MessageBoxButton.OK, MessageBoxImage.Warning);
+                            MessageBox.Show("Người này chưa có CMND/CCCD!", "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Warning);
                             return false;
                         }
                         else if (person.Id_Household != null)
                         {
                             Id = "";
                             
-                            MessageBox.Show("This person has declared Household Registration!", "Notification!", MessageBoxButton.OK, MessageBoxImage.Warning);
+                            MessageBox.Show("Người này đã có hộ khẩu !", "Thông Báo !", MessageBoxButton.OK, MessageBoxImage.Warning);
                             return false;
                         }
 
@@ -171,12 +171,12 @@ namespace household_management.ViewModel
                     Selected = null;
                     NewTableFamily(Id_Household);
                     p.ItemsSource = dvFamily;
-                    MessageBox.Show("Add Successfully!", "Notification!", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Thêm thành công!", "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 }
                 catch (Exception e)
                 {
-                    MessageBox.Show("Fail!", "Notification!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Thất bại!", "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
 
 

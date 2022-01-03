@@ -56,15 +56,15 @@ namespace household_management.ViewModel
             {
                 if (!check1 || !check2 || !check3)
                 {
-                    MessageBox.Show("Not fully entered");
+                    MessageBox.Show("Còn khoảng trống chưa điền");
                 }
                 else if (password != LoginViewModel.passwordX)
                 {
-                    MessageBox.Show("Incorrect password");
+                    MessageBox.Show("Sai mật khẩu");
                 }
                 else if(new_password != tmp)
                 {
-                    MessageBox.Show("Incorrect confirm new password");
+                    MessageBox.Show("Mật khẩu mới nhập lại không đúng");
                 }
                 else
                 {
@@ -72,7 +72,7 @@ namespace household_management.ViewModel
                     var tk = Model.DataProvider.Ins.DB.Users.Where(x => x.Id == c).SingleOrDefault();
                     tk.Password = Base64Encode(new_password);
                     Model.DataProvider.Ins.DB.SaveChanges();
-                    MessageBox.Show("Password have been change");
+                    MessageBox.Show("Đổi mật khẩu thành công !");
                 }
             });
         }

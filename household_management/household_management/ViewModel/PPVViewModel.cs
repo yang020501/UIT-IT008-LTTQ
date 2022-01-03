@@ -127,7 +127,7 @@ namespace household_management.ViewModel
                 }
                 catch
                 {
-                    MessageBox.Show("Id_Household is invalid or null!\nYour other changes will be SAVED", "Warning", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                    MessageBox.Show("Mã hộ khẩu không tồn tại!\nNhững thay đổi khác đã được lưu", "Cảnh Báo", MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 }
 
                 //reload 
@@ -138,7 +138,7 @@ namespace household_management.ViewModel
                 NullProperty();
                 NewTablePopulations();
                 p.ItemsSource = dvPopulations;
-                MessageBox.Show("Update Successfully!", "Notifications!", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+                MessageBox.Show("Đã lưu thay đổi!", "Thông Báo!", MessageBoxButton.OKCancel, MessageBoxImage.Information);
             });
             //Delete
             Deletebtn = new RelayCommand<DataGrid>((p) =>
@@ -151,7 +151,7 @@ namespace household_management.ViewModel
             }, (p) =>
             {
 
-                if (MessageBox.Show("It will REMOVE relavant Page like Absence,Transfer,Residence,FamilyHoushold\nDo you want to REMOVE?", "Warning!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                if (MessageBox.Show("Việc này sẽ xóa các giấy tờ có liên quan\nBạn có muốn XÓA?", "Cảnh Báo!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
                     var household = DataProvider.Ins.DB.Household_Registration.Where(x => x.IdOfOwner == Id).ToList();
                     if (household.Count  < 1 || household == null)
@@ -196,7 +196,7 @@ namespace household_management.ViewModel
                     }
                     else
                     {
-                        MessageBox.Show("This person is a Owner of Household: " + household[0].Id + "\nPlease REMOVE in Household first!", "Notification!", MessageBoxButton.OK, MessageBoxImage.Stop);
+                        MessageBox.Show("Đây là người đứng tên sổ hộ khẩu: " + household[0].Id + "\nVui lòng xóa hộ khẩu trước!", "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Stop);
                     }
                 }
 

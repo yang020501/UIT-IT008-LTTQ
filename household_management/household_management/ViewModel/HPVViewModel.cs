@@ -118,11 +118,11 @@ namespace household_management.ViewModel
                     NullProperty();
                     NewTableHousehold();
                     p.ItemsSource = dvHousehold;
-                    MessageBox.Show("Update Successfully!", "Notifications!", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Đã lưu thay đổi !", "Thông Báo !", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 catch (Exception e)
                 {
-                    MessageBox.Show(e.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show(e.Message, "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
                 }               
   
             });
@@ -137,7 +137,7 @@ namespace household_management.ViewModel
             }, (p) =>
             {
 
-                if (MessageBox.Show("Do you want to REMOVE?"+"\nAll relevant FamilyMember in Household will be REMOVE", "Warning!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                if (MessageBox.Show("Bạn có muốn XÓA?" + "\nTất cả thành viên trong hộ khẩu đều sẽ bi XÓA", "Cảnh Báo!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {                   
                     //try
                     //{

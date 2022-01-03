@@ -52,24 +52,24 @@ namespace household_management.ViewModel
             {
                 if(Name == null || Name == "" || UserName == null || UserName == "")
                 {
-                    MessageBox.Show("Not fully entered");
+                    MessageBox.Show("Còn khoảng trắng chưa điền");
                 }
                 else if(UserName.Length > 15)
                 {
-                    MessageBox.Show("User name is too long");
+                    MessageBox.Show("Tên tài khoảng quá dài");
                 }
                 else if (!CheckUserName(UserName))
                 {
-                    MessageBox.Show("User name is exist, pick another one");
+                    MessageBox.Show("Tài khoản đã tồn tại, vui lòng chọn cái khác");
                 }
                 else if(Password != PasswordRepeat)
                 {
-                    MessageBox.Show("The repeat password is incorrect, try again");
+                    MessageBox.Show("Mật khẩu nhập lại không đúng");
                     Console.WriteLine("aaaaaaaaaaaaaaaaaa");
                 }
                 else
                 {
-                    if (MessageBox.Show("Do you want to ADD this account?", "Warning!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                    if (MessageBox.Show("Bạn có muốn tạo tài khoản này?", "Cánh Báo!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                     {
                         try
                         {
@@ -89,12 +89,12 @@ namespace household_management.ViewModel
                             PasswordRepeat = null;
                             UserName = null;
 
-                            MessageBox.Show("Successfully adding a user");
+                            MessageBox.Show("Tạo tài khoản thành công");
                             p.Close();
                         }
                         catch (Exception e)
                         {
-                            MessageBox.Show(e.Message, "Notification!", MessageBoxButton.OK, MessageBoxImage.Warning);
+                            MessageBox.Show(e.Message, "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Warning);
                         }
                     }
                 }

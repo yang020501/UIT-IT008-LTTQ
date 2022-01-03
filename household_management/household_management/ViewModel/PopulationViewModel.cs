@@ -94,7 +94,7 @@ namespace household_management.ViewModel
                         {
                             HouseholdAddress = x.Address;
                             check_IdHousehold = true;
-                            MessageBox.Show("Household have been registed, you are now able to regist a population","Notification1",MessageBoxButton.OK,MessageBoxImage.Information);
+                            MessageBox.Show("Hộ khẩu này đã được đăng kí, bạn có thể tiến thành làm nhân khẩu", "Thông Báo", MessageBoxButton.OK,MessageBoxImage.Information);
                             break;
                         }
                     }
@@ -238,11 +238,11 @@ namespace household_management.ViewModel
                         Model.DataProvider.Ins.DB.SaveChanges();
                     }
 
-                MessageBox.Show("Add Successfully!", "Notification!", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Lưu thành công!", "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Id is exist please try again!","Error",MessageBoxButton.OK,MessageBoxImage.Error);
+                    MessageBox.Show("CMND/CCCD đã tồn tại, vui lòng thữ lại!","Lỗi",MessageBoxButton.OK,MessageBoxImage.Error);
                 }
                 isMale = false;
                 isFemale = false;

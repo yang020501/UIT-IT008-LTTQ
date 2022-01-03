@@ -52,7 +52,7 @@
                     <Label Content="Ngày hết hạn:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="794,206,0,0" Height="21" Width="126" FontSize="16" Padding="0"/>
                     <Label Content="Ngày tạo:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="794,152,0,0" Height="21" Width="126" FontSize="16" Padding="0"/>
                     <TextBox IsReadOnly="True"
-                 HorizontalAlignment="Left" Height="34" Margin="925,139,0,0"  VerticalAlignment="Top" Width="180" materialDesign:HintAssist.Hint="Day leave" TextWrapping="Wrap" FontSize="16"  Text="{Binding CreateDate, UpdateSourceTrigger=PropertyChanged}" />
+                 HorizontalAlignment="Left" Height="34" Margin="925,139,0,0"  VerticalAlignment="Top" Width="180" materialDesign:HintAssist.Hint="Ngày đi" TextWrapping="Wrap" FontSize="16"  Text="{Binding CreateDate, UpdateSourceTrigger=PropertyChanged}" />
 
                     <TextBox
                          materialDesign:HintAssist.Foreground="Black"
@@ -65,7 +65,7 @@
                     </TextBox>
                     <materialDesign:PackIcon Kind="HomeMapMarker" Margin="784,258,0,0" Height="46" Width="49" />
                     <TextBox IsReadOnly="True"
-                HorizontalAlignment="Left" Height="34" Margin="925,197,0,0"  VerticalAlignment="Top" Width="180" materialDesign:HintAssist.Hint="Day back" TextWrapping="Wrap" FontSize="16"  Text="{Binding CreateDate, UpdateSourceTrigger=PropertyChanged}" />
+                HorizontalAlignment="Left" Height="34" Margin="925,197,0,0"  VerticalAlignment="Top" Width="180" materialDesign:HintAssist.Hint="Ngày về" TextWrapping="Wrap" FontSize="16"  Text="{Binding CreateDate, UpdateSourceTrigger=PropertyChanged}" />
                     <Label Content="MÃ:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
                     <Label Content="{Binding Id,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="32,14,0,0" VerticalAlignment="Top" Width="59" Height="20" Padding="0"/>
 
