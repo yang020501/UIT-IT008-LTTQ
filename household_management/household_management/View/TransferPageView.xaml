@@ -72,7 +72,7 @@
                 HorizontalAlignment="Left" Height="49" Margin="780,213,0,0"  VerticalAlignment="Top" Width="348" materialDesign:HintAssist.Hint="Địa chỉ hộ khẩu cũ" TextWrapping="Wrap" FontSize="16" Text="{Binding OAddress, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
                 <materialDesign:PackIcon Kind="HomeEdit" Margin="738,226,0,0" Height="36" Width="32" RenderTransformOrigin="0.137,0.422" />
                 <Label Content="MÃ:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
-                <Label Content="{Binding Id, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="32,14,0,0" VerticalAlignment="Top" Width="59" Height="20" Padding="0"/>
+                <Label Content="{Binding Id, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="43,14,0,0" VerticalAlignment="Top" Width="59" Height="20" Padding="0"/>
 
             </Grid>
         </Border>

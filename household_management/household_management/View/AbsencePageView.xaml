@@ -67,7 +67,7 @@
                     <TextBox IsReadOnly="True"
                 HorizontalAlignment="Left" Height="34" Margin="925,197,0,0"  VerticalAlignment="Top" Width="180" materialDesign:HintAssist.Hint="Day back" TextWrapping="Wrap" FontSize="16"  Text="{Binding CreateDate, UpdateSourceTrigger=PropertyChanged}" />
                     <Label Content="MÃ:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
-                    <Label Content="{Binding Id,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="32,14,0,0" VerticalAlignment="Top" Width="59" Height="20" Padding="0"/>
+                    <Label Content="{Binding Id,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="43,14,0,0" VerticalAlignment="Top" Width="59" Height="20" Padding="0"/>
 
                 </Grid>
             </Border>
