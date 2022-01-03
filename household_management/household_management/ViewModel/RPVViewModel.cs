@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
@@ -99,9 +100,13 @@ namespace household_management.ViewModel
             }, (p) =>
             {
 
-                DataProvider.Ins.DB.Temporary_Residence.Remove(DataProvider.Ins.DB.Temporary_Residence.Where(x => x.Id == Id).SingleOrDefault());
-                DataProvider.Ins.DB.SaveChanges();
-                NewTableResidence();
+                if (MessageBox.Show("Bạn có muốn xóa không?", "Lưu ý!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+
+                    DataProvider.Ins.DB.Temporary_Residence.Remove(DataProvider.Ins.DB.Temporary_Residence.Where(x => x.Id == Id).SingleOrDefault());
+                    DataProvider.Ins.DB.SaveChanges();
+                    NewTableResidence();
+                }
 
             });
         }
