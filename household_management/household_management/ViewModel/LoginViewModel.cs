@@ -71,7 +71,7 @@ namespace household_management.ViewModel
             else
             {
                 isLogin = false;
-                MessageBox.Show("Wrong password or user name","Warning!",MessageBoxButton.OK,MessageBoxImage.Error);
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu", "Cảnh Báo!", MessageBoxButton.OK,MessageBoxImage.Error);
 
             }
         }        

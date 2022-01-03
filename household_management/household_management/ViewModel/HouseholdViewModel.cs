@@ -256,7 +256,7 @@ namespace household_management.ViewModel
                         }
                         else if (!checkHHPop)
                         {
-                            MessageBox.Show(member.Name + " with Id: " + member.Id + " is already has a household registration");
+                            MessageBox.Show(member.Name + " CMND/CCCD: " + member.Id + " đã có hộ khẩu !");
                         }
                         else if(checkIdPop && checkHHPop)
                         {
@@ -289,14 +289,14 @@ namespace household_management.ViewModel
                     Model.DataProvider.Ins.DB.Family_Household.Add(owner);
                     Model.DataProvider.Ins.DB.SaveChanges();
 
-                    MessageBox.Show("Create Household Registration Successfully", "Notification!", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Tạo hộ khẩu thành công", "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Information);
                     FamilyViewModel.list_of_family_member.Clear();
                     IdHousehold = GenarateId();
                 }
 
                 if (!check_is_ok)
                 {
-                    MessageBox.Show("This person already have in household registration", "Warning!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Người này đã có hộ khẩu", "Cảnh Báo!", MessageBoxButton.OK, MessageBoxImage.Error);
                     FamilyViewModel.list_of_family_member.Clear();
                 }
 

@@ -36,21 +36,21 @@
                         <TextBox  materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                    HorizontalAlignment="Left" Height="49" Margin="75,0,0,0"  VerticalAlignment="Top" Width="193" materialDesign:HintAssist.Hint="FamilyName" TextWrapping="Wrap" FontSize="16" Text="{Binding FamilyName, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
+                    HorizontalAlignment="Left" Height="49" Margin="75,0,0,0"  VerticalAlignment="Top" Width="193" materialDesign:HintAssist.Hint="Họ" TextWrapping="Wrap" FontSize="16" Text="{Binding FamilyName, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
                         <TextBox
                              materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                    HorizontalAlignment="Left" Height="49" Margin="309,0,0,0"  VerticalAlignment="Top" Width="315" materialDesign:HintAssist.Hint="Name" TextWrapping="Wrap" FontSize="16" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Black" Padding="0,6,0,0"/>
+                    HorizontalAlignment="Left" Height="49" Margin="309,0,0,0"  VerticalAlignment="Top" Width="315" materialDesign:HintAssist.Hint="Tên" TextWrapping="Wrap" FontSize="16" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" BorderBrush="Black" Padding="0,6,0,0"/>
                         <materialDesign:PackIcon Kind="Account" Margin="22,14,0,0" Height="35" Width="32"  />
                         <TextBox
                             materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                    HorizontalAlignment="Left" Height="49" Margin="75,120,0,0"  VerticalAlignment="Top" Width="220" materialDesign:HintAssist.Hint="Id" TextWrapping="Wrap" FontSize="16" Text="{Binding Id, UpdateSourceTrigger=PropertyChanged}"  materialDesign:HintAssist.HelperText="12 digits numbers" Padding="0,6,0,0" />
+                    HorizontalAlignment="Left" Height="49" Margin="75,120,0,0"  VerticalAlignment="Top" Width="220" materialDesign:HintAssist.Hint="CMND/CCCD" TextWrapping="Wrap" FontSize="16" Text="{Binding Id, UpdateSourceTrigger=PropertyChanged}"  materialDesign:HintAssist.HelperText="12 chữ số" Padding="0,6,0,0" />
                         <materialDesign:PackIcon Kind="CardAccountDetails" Margin="22,138,0,0" Height="31" Width="32" RenderTransformOrigin="0.438,1.342" />
-                        <RadioButton Content="Female" HorizontalAlignment="Left" Margin="537,128,0,0" VerticalAlignment="Top"  Height="28" RenderTransformOrigin="0.615,0.157" GroupName="Gender" Name="FemaleChoise" IsChecked="{Binding isFemale, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" CommandParameter="{Binding ElementName=FemaleChoise}" BorderBrush="#FF4D60C0" Foreground="#FF020109" Background="#FF4D60C0"/>
-                        <RadioButton Content="Male" HorizontalAlignment="Left" Margin="465,128,0,0" VerticalAlignment="Top"  Height="28" RenderTransformOrigin="0.615,0.157" GroupName="Gender" Name="MaleChoise" IsChecked="{Binding isMale, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" CommandParameter="{Binding ElementName=MaleChoise}" Foreground="#FF020109" BorderBrush="#FF4D60C0" Background="#FF4D60C0"/>
+                        <RadioButton Content="Nữ" HorizontalAlignment="Left" Margin="537,128,0,0" VerticalAlignment="Top"  Height="28" RenderTransformOrigin="0.615,0.157" GroupName="Gender" Name="FemaleChoise" IsChecked="{Binding isFemale, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" CommandParameter="{Binding ElementName=FemaleChoise}" BorderBrush="#FF4D60C0" Foreground="#FF020109" Background="#FF4D60C0"/>
+                        <RadioButton Content="Nam" HorizontalAlignment="Left" Margin="465,128,0,0" VerticalAlignment="Top"  Height="28" RenderTransformOrigin="0.615,0.157" GroupName="Gender" Name="MaleChoise" IsChecked="{Binding isMale, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" CommandParameter="{Binding ElementName=MaleChoise}" Foreground="#FF020109" BorderBrush="#FF4D60C0" Background="#FF4D60C0"/>
                         <DatePicker      
                                     materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"      
@@ -64,21 +64,21 @@
                              materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                    HorizontalAlignment="Left" Height="49" Margin="75,237,0,0"  VerticalAlignment="Top" Width="364" materialDesign:HintAssist.Hint="Address" TextWrapping="Wrap" FontSize="16" Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
+                    HorizontalAlignment="Left" Height="49" Margin="75,237,0,0"  VerticalAlignment="Top" Width="364" materialDesign:HintAssist.Hint="Địa chỉ" TextWrapping="Wrap" FontSize="16" Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
                         <materialDesign:PackIcon Kind="MapMarker" Margin="22,255,0,0" Height="31" Width="32" />
-                        <Label Content="Gender:" HorizontalAlignment="Left" Margin="387,130,0,0" VerticalAlignment="Top" Height="26" Width="73" FontSize="16"/>
+                        <Label Content="Giới tính:" HorizontalAlignment="Left" Margin="387,130,0,0" VerticalAlignment="Top" Height="26" Width="73" FontSize="16"/>
                         <TextBox
                              materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                    HorizontalAlignment="Left" Height="49" Margin="369,54,0,0"  VerticalAlignment="Top" Width="227" materialDesign:HintAssist.Hint="Place of birth" TextWrapping="Wrap" FontSize="16" Text="{Binding PlaceOfBirth, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
+                    HorizontalAlignment="Left" Height="49" Margin="369,54,0,0"  VerticalAlignment="Top" Width="227" materialDesign:HintAssist.Hint="Nơi sinh" TextWrapping="Wrap" FontSize="16" Text="{Binding PlaceOfBirth, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
                         <TextBox Name="IdH" 
                                    materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                          
                          HorizontalAlignment="Left" Height="34" 
                          Margin="195,198,0,0"  VerticalAlignment="Top" Width="209" 
-                         materialDesign:HintAssist.Hint="HouseholdId" TextWrapping="Wrap" 
+                         materialDesign:HintAssist.Hint="Mã hộ khẩu" TextWrapping="Wrap" 
                          FontSize="16" 
                          Text="{Binding HouseholdId, UpdateSourceTrigger=PropertyChanged}">
                             <i:Interaction.Triggers>
@@ -92,33 +92,33 @@
                              materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                             HorizontalAlignment="Left" Height="49" Margin="75,379,0,0"  VerticalAlignment="Top" Width="128" materialDesign:HintAssist.Hint="Religon" TextWrapping="Wrap" FontSize="16" Text="{Binding Religion, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Padding="0,6,0,0"/>
+                             HorizontalAlignment="Left" Height="49" Margin="75,379,0,0"  VerticalAlignment="Top" Width="128" materialDesign:HintAssist.Hint="Tôn giáo" TextWrapping="Wrap" FontSize="16" Text="{Binding Religion, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Padding="0,6,0,0"/>
                         <materialDesign:PackIcon Kind="Cross" Margin="22,397,0,0" Height="31" Width="32" RenderTransformOrigin="0.825,-1.055" />
                         <materialDesign:PackIcon Kind="Briefcase" Margin="22,461,0,73.2" Height="Auto" Width="32" RenderTransformOrigin="0.412,1.303" VerticalAlignment="Stretch" />
                         <TextBox
                              materialDesign:HintAssist.Foreground="Black"
                              materialDesign:TextFieldAssist.UnderlineBrush="Black"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                             HorizontalAlignment="Left" Height="49" Margin="75,445,0,0"  VerticalAlignment="Top" Width="220" materialDesign:HintAssist.Hint="Career" TextWrapping="Wrap" FontSize="16" Text="{Binding Carrer, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
+                             HorizontalAlignment="Left" Height="49" Margin="75,445,0,0"  VerticalAlignment="Top" Width="220" materialDesign:HintAssist.Hint="Nghề nghiệp" TextWrapping="Wrap" FontSize="16" Text="{Binding Carrer, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
                         <TextBox
                              materialDesign:HintAssist.Foreground="Black"
                              materialDesign:TextFieldAssist.UnderlineBrush="Black" 
                             
                              HorizontalAlignment="Left" Height="34" Margin="75,338,0,0"  VerticalAlignment="Top" Width="364" 
-                             materialDesign:HintAssist.Hint="HouseHold Address" TextWrapping="Wrap" FontSize="16" 
+                             materialDesign:HintAssist.Hint="Địa chỉ hộ khẩu" TextWrapping="Wrap" FontSize="16" 
                              Text="{Binding HouseholdAddress, UpdateSourceTrigger=PropertyChanged}"
                              IsReadOnly="True"/>
-                        <Button Command="{Binding AddingCommand}" Content="Add" Margin="184,518,0,0" Height="38" Background="#FF4D60C0" HorizontalAlignment="Left" Width="95" VerticalAlignment="Top" Name="AddButton" CommandParameter="{Binding ElementName=AddButton}" Foreground="White"/>
-                        <Label Content="Household Address" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,302,0,0" Height="31" Width="232" FontSize="16" Padding="0,4,4,4"/>
-                        <Label Content="Household Id:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,208,0,0" Height="24" Width="131" FontSize="16" Padding="0" FontWeight="Bold" FontStyle="Italic"/>
+                        <Button Command="{Binding AddingCommand}" Content="Lưu" Margin="184,518,0,0" Height="38" Background="#FF4D60C0" HorizontalAlignment="Left" Width="95" VerticalAlignment="Top" Name="AddButton" CommandParameter="{Binding ElementName=AddButton}" Foreground="White"/>
+                        <Label Content="Địa chỉ hộ khẩu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,302,0,0" Height="31" Width="232" FontSize="16" Padding="0,4,4,4"/>
+                        <Label Content="Mã hộ khẩu:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,208,0,0" Height="24" Width="131" FontSize="16" Padding="0" FontWeight="Bold" FontStyle="Italic"/>
                         <materialDesign:PackIcon Kind="HomeMapMarker" Margin="22,341,0,0" Height="31" Width="32" />
                         <materialDesign:PackIcon Kind="Present" Margin="22,76,0,0" Height="31" Width="32" />
                         <materialDesign:PackIcon Kind="HospitalMarker" Margin="313,76,0,0" Height="31" Width="32" RenderTransformOrigin="1.794,-1.213" />
 
-                        <Button Content="Clear" HorizontalAlignment="Left" Margin="346,518,0,0" 
+                        <Button Content="Làm mới" HorizontalAlignment="Left" Margin="346,518,0,0" 
                         VerticalAlignment="Top" Width="95" Height="38" Background="#FF4D60C0" 
                         Command="{Binding ClearCommand}" CommandParameter="{Binding ElementName=PopulationPageX}" Foreground="White"/>
-                        <Button CommandParameter="{Binding ElementName=imPic}" Command="{Binding Choosebtn}" Content="Choose" Margin="-136,363,0,0" Height="38" Background="#FF4D60C0" HorizontalAlignment="Left" Width="95" VerticalAlignment="Top" Foreground="White"  />
+                        <Button CommandParameter="{Binding ElementName=imPic}" Command="{Binding Choosebtn}" Content="Chọn" Margin="-136,363,0,0" Height="38" Background="#FF4D60C0" HorizontalAlignment="Left" Width="95" VerticalAlignment="Top" Foreground="White"  />
                     </Grid>
                 </Border>
             </Grid>

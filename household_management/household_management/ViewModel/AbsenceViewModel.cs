@@ -50,7 +50,7 @@ namespace household_management.ViewModel
                         {
                             if (Id_Household == h.Id)
                             {
-                                MessageBox.Show("Id is valid", "Notifications", MessageBoxButton.OK, MessageBoxImage.Information);
+                                MessageBox.Show("Mã hộ khẩu hợp lệ", "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Information);
                                 checkIdHousehold = true;
                                 Address = h.Address;
                                 Name_Owner = h.NameOfOwner;
@@ -61,18 +61,18 @@ namespace household_management.ViewModel
                      
                         if (checkIdHousehold == false)
                         {
-                            MessageBox.Show("Invalid id household", "Notifications", MessageBoxButton.OK, MessageBoxImage.Warning);
+                            MessageBox.Show("Mã hộ khẩu không hợp lệ", "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Warning);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("There is not any household registration", "Notification!", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        MessageBox.Show("Không tìm thấy hộ khẩu", "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Warning);
 
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Invalid id household", "Notifications", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Mã hộ khẩu không hợp lệ", "Thông Báo!", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
             });
 
@@ -89,15 +89,15 @@ namespace household_management.ViewModel
             {
                 if (Name_User == null || Id_User == null)
                 {
-                    MessageBox.Show("There is an unfilled blank");
+                    MessageBox.Show("Còn khoảng trống chưa điền");
                 }
                 else if (!CheckIsDoingPopulation(Id_User))
                 {
-                    MessageBox.Show("The person dont have a population, please do it before doing absence certificate");
+                    MessageBox.Show("Người này chưa có nhân khẩu, vui lòng thực hiện nhân khẩu trước khi làm giấy tạm vắng");
                 }
                 else if (ExpireDate <= CreateDate)
                 {
-                    MessageBox.Show("The expire date is smaller than the create date");
+                    MessageBox.Show("Ngày hết hạn không hợp lệ");
                     Console.WriteLine(ExpireDate);
                 }
                 else
@@ -119,7 +119,7 @@ namespace household_management.ViewModel
                     Model.DataProvider.Ins.DB.SaveChanges();
                     checkIdHousehold = false;
 
-                    MessageBox.Show("Add Successfully","Notification!",MessageBoxButton.OK,MessageBoxImage.Information);
+                    MessageBox.Show("Lưu thành công", "Thông Báo!", MessageBoxButton.OK,MessageBoxImage.Information);
                 }
                 
             });

@@ -118,11 +118,13 @@ namespace household_management.ViewModel
                     NullProperty();
                     NewTableHousehold();
                     p.ItemsSource = dvHousehold;
+
                     MessageBox.Show("Cập nhật thành công!", "Thông báo!", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 catch (Exception e)
                 {
                     MessageBox.Show(e.Message, "Lỗi!", MessageBoxButton.OK, MessageBoxImage.Error);
+
                 }               
   
             });
@@ -137,7 +139,9 @@ namespace household_management.ViewModel
             }, (p) =>
             {
 
+
                 if (MessageBox.Show("Bạn có muốn xóa?"+"\nTất cả thành viên trong hộ khẩu cũng sẽ mất!", "Lưu ý!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+
                 {                   
                     //try
                     //{

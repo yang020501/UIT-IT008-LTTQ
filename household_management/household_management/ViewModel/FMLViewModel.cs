@@ -65,7 +65,9 @@ namespace household_management.ViewModel
                     return false;
             }, (p) =>
             {
+
                 if (MessageBox.Show("Bạn có muốn xóa không?", "Lưu ý!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+
                 {
                     string tmp = (string)Selected.Row["Id_Person"];
                     var familymemList = DataProvider.Ins.DB.Family_Household.Where(x => x.Id_Person == tmp).ToList();
@@ -86,7 +88,9 @@ namespace household_management.ViewModel
                         else familymem = DataProvider.Ins.DB.Family_Household.Where(x => x.Id_Person == tmp).SingleOrDefault();
                         if (familymem.Id_Owner == familymem.Id_Person)
                         {
+
                             MessageBox.Show("Không thể xóa chủ hộ", "Thông báo!", MessageBoxButton.OK, MessageBoxImage.Warning);
+
                             return;
                         }
                         DataProvider.Ins.DB.Family_Household.Remove(familymem);
@@ -128,14 +132,18 @@ namespace household_management.ViewModel
                           
                             Id = "";
                            
+
                             MessageBox.Show("Người này chưa khai báo nhân khẩu", "Thông báo!", MessageBoxButton.OK, MessageBoxImage.Warning);
+
                             return false;
                         }
                         else if (person.Id_Household != null)
                         {
                             Id = "";
                             
+
                             MessageBox.Show("Người này đã có hộ khẩu!", "Thông báo!", MessageBoxButton.OK, MessageBoxImage.Warning);
+
                             return false;
                         }
 
@@ -171,12 +179,16 @@ namespace household_management.ViewModel
                     Selected = null;
                     NewTableFamily(Id_Household);
                     p.ItemsSource = dvFamily;
+
                     MessageBox.Show("Thêm thành công!", "Thông báo!", MessageBoxButton.OK, MessageBoxImage.Information);
+
 
                 }
                 catch (Exception e)
                 {
+
                     MessageBox.Show("Lỗi", "Thông báo!", MessageBoxButton.OK, MessageBoxImage.Error);
+
                 }
 
 

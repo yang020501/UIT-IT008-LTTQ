@@ -121,7 +121,7 @@ namespace household_management.ViewModel
                 Selected = null;
                 NullProperty();
                
-                MessageBox.Show("Update Successful!", "Notifications!", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+                MessageBox.Show("Đã lưu thay đổi!", "Thông Báo!", MessageBoxButton.OKCancel, MessageBoxImage.Information);
             });
 
             Deletebtn = new RelayCommand<DataGrid>((p) =>
@@ -133,7 +133,7 @@ namespace household_management.ViewModel
 
             }, (p) =>
             {
-                if (MessageBox.Show("Do you want to REMOVE?", "Warning!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                if (MessageBox.Show("ạn muốn XÓA không?", "Cảnh Báo!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
                     try
                     {
@@ -148,7 +148,7 @@ namespace household_management.ViewModel
                     }
                     catch(Exception e)
                     {
-                        MessageBox.Show(e.Message, "Notification!", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        MessageBox.Show(e.Message, "Thông Báo !", MessageBoxButton.OK, MessageBoxImage.Warning);
                     }
                 }
             });

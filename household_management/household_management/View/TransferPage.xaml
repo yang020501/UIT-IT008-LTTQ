@@ -19,7 +19,7 @@
             <Grid >
                 <Border BorderBrush="Black" BorderThickness="1" Margin="32,32,32,60.4">
                     <Grid  >
-                        <Label Content="Household Transfer Form" Margin="206,68,256.4,369" FontWeight="Bold" FontFamily="Trebuchet MS" FontSize="24" Padding="8,4,4,4" Foreground="#DDED1D1D"/>
+                        <Label Content="Phiếu chuyển khẩu" Margin="253,68,210,369" FontWeight="Bold" FontFamily="Trebuchet MS" FontSize="24" Padding="8,4,4,4" Foreground="#DDED1D1D"/>
                         <materialDesign:PackIcon Kind="HomeAccount" Margin="47,146,0,0" Height="31" Width="32" RenderTransformOrigin="0.597,-2.323" />
                         <TextBox 
 
@@ -27,14 +27,14 @@
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                         Height="49" Margin="96,128,210.4,0"  VerticalAlignment="Top" 
-                             materialDesign:HintAssist.Hint="Full Name Of User" TextWrapping="Wrap" 
+                             materialDesign:HintAssist.Hint="Họ tên người làm" TextWrapping="Wrap" 
                              FontSize="16" Text="{Binding Name_User, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
                         <TextBox
                          materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                         HorizontalAlignment="Left" Height="49" Margin="96,187,0,0"  
-                        VerticalAlignment="Top" Width="208" materialDesign:HintAssist.Hint="Id"
+                        VerticalAlignment="Top" Width="208" materialDesign:HintAssist.Hint="CMND/CCCD"
                         TextWrapping="Wrap" FontSize="16" Text="{Binding Id_User, UpdateSourceTrigger=PropertyChanged}"  
                         materialDesign:HintAssist.HelperText="12 digits numbers" Padding="0,6,0,0" />
                         <materialDesign:PackIcon Kind="CardAccountDetails" Margin="47,205,0,0" Height="31" Width="32" />
@@ -44,13 +44,13 @@
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                         HorizontalAlignment="Left" Height="49" Margin="96,299,0,0" IsReadOnly="True"
-                        VerticalAlignment="Top" Width="396" materialDesign:HintAssist.Hint="HouseHold Adress" 
+                        VerticalAlignment="Top" Width="396" materialDesign:HintAssist.Hint="Địa chỉ hộ khẩu" 
                         TextWrapping="Wrap" FontSize="16" Text="{Binding Old_Address, UpdateSourceTrigger=PropertyChanged}" Padding="0,6,0,0"/>
                         <materialDesign:PackIcon Kind="HomeEdit" Margin="47,426,0,0" Height="31" Width="32" />
                         <TextBox
                         materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
-                     HorizontalAlignment="Left" Margin="256,257,0,185" Width="236" materialDesign:HintAssist.Hint="Household Id" 
+                     HorizontalAlignment="Left" Margin="256,257,0,185" Width="236" materialDesign:HintAssist.Hint="Mã hộ khẩu" 
                         TextWrapping="Wrap" FontSize="16" Text="{Binding Id_Household, UpdateSourceTrigger=PropertyChanged}"
                         Name="HouseholdIdBox">
 
@@ -61,32 +61,32 @@
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                         </TextBox>
-                        <Label Content="Old Household Id:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="96,261,0,0" Height="30" Width="126" FontSize="16" Padding="0,6.5,0,0"/>
+                        <Label Content="Mã hộ khẩu cũ:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="96,261,0,0" Height="30" Width="126" FontSize="16" Padding="0,6.5,0,0"/>
                         <TextBox
                          materialDesign:HintAssist.Foreground="Black" IsReadOnly="True"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
                             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                         HorizontalAlignment="Left" Height="49" Margin="96,408,0,0"  
-                        VerticalAlignment="Top" Width="396" materialDesign:HintAssist.Hint="HouseHold New Adress" 
+                        VerticalAlignment="Top" Width="396" materialDesign:HintAssist.Hint="Địa chỉ hộ khẩu mới" 
                         TextWrapping="Wrap" FontSize="16" Text="{Binding New_Address, UpdateSourceTrigger=PropertyChanged}"/>
-                        
-                            <Button Content="Check" HorizontalAlignment="Left" Background="#FF4D60C0" Height="38"
+
+                        <Button Content="Kiểm tra" HorizontalAlignment="Left" Background="#FF4D60C0" Height="38"
                             Margin="523,253,0,0" VerticalAlignment="Top" Width="95"
                             Command="{Binding CheckIdHouseholdCommand}" 
                                 CommandParameter="{Binding ElementName=HouseholdIdBox}" Foreground="White"/>
 
 
-                        <Button Content="Check" HorizontalAlignment="Left" Background="#FF4D60C0" Height="38"
+                        <Button Content="Kiểmtra" HorizontalAlignment="Left" Background="#FF4D60C0" Height="38"
                             Margin="523,359,0,0" VerticalAlignment="Top" Width="95"
                             Command="{Binding CheckIdHouseholdCommand}" CommandParameter="{Binding ElementName=HouseholdIdBox_New}" 
                                     Foreground="White"/>
 
-                        <Label Content="SOCIALIST REPUBLIC OF VIETNAM" Margin="182,10,0,0" VerticalAlignment="Top" Height="38" HorizontalAlignment="Left" Width="366" FontSize="20" FontWeight="Bold"/>
-                        <Label Content="Independent - Freedom - Happpiness" HorizontalAlignment="Left" Margin="219,38,0,0" VerticalAlignment="Top" Width="273" FontSize="16"/>
+                        <Label Content="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM" Margin="156,10,0,0" VerticalAlignment="Top" Height="38" HorizontalAlignment="Left" Width="418" FontSize="20" FontWeight="Bold"/>
+                        <Label Content="Độc lập - Tự do - Hạnh phúc" HorizontalAlignment="Left" Margin="256,39,0,0" VerticalAlignment="Top" Width="273" FontSize="16"/>
                         <TextBox
                         materialDesign:HintAssist.Foreground="Black"
                             materialDesign:TextFieldAssist.UnderlineBrush="Black"
-                        HorizontalAlignment="Left" Margin="256,363,0,79" Width="236" materialDesign:HintAssist.Hint="Household Id" 
+                        HorizontalAlignment="Left" Margin="256,363,0,79" Width="236" materialDesign:HintAssist.Hint="Mã hộ khẩu" 
                         TextWrapping="Wrap" FontSize="16" Text="{Binding New_Id_Household, UpdateSourceTrigger=PropertyChanged}"
                         x:Name="HouseholdIdBox_New">
 
@@ -98,15 +98,15 @@
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                         </TextBox>
-                        <Label Content="New Household Id:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="96,367,0,0" Height="30" Width="141" FontSize="16" Padding="0,6.5,0,0"/>
-                        
+                        <Label Content="Mã hộ khẩu mới:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="96,367,0,0" Height="30" Width="141" FontSize="16" Padding="0,6.5,0,0"/>
+
                     </Grid>
                 </Border>
-                <Button Content="Add"  Height="38" Width="95" Background="#FF4D60C0" 
+                <Button Content="Lưu"  Height="38" Width="95" Background="#FF4D60C0" 
                     Margin="270,522,459,0" VerticalAlignment="Top" Name="AddButton"
 
                     Command="{Binding AddCommand}" CommandParameter="{Binding ElementName=AddButton}" Foreground="White"/>
-                <Button Content="Clear"  Height="38" Width="95" Background="#FF4D60C0" 
+                <Button Content="Làm mới"  Height="38" Width="95" Background="#FF4D60C0" 
                     Margin="450,522,279,0" VerticalAlignment="Top" x:Name="ClearButton"
                     Command="{Binding ClearCommand}" CommandParameter="{Binding ElementName=ClearButton}" Foreground="White"/>
             </Grid>
